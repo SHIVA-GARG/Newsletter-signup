@@ -1,3 +1,5 @@
+//https://mighty-castle-62973.herokuapp.com/
+
 const express = require("express");
 const bodyParser = require("body-parser")
 const request =require("request");
@@ -70,7 +72,7 @@ app.post("/failure",function(req,res){
 
 
 
-app.listen(3000 || process.env.PORT,()=>{
+app.listen(process.env.PORT || 3000,()=>{
     console.log("running on 3000");
 })
 
